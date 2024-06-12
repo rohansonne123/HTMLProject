@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FormAssignmrnt</title>
+</head>
+<body>
+    <!-- Assignment Creating the registration form -->
+    <form action="/action.php">
+        <h3>Registration Form</h3>
+        <div>
+            <input type="text" placeholder="first name" name="first"/>
+            <input type="text" placeholder="last name" name="last"/>
+        </div>
+        <div>
+            <label for="gen">Select Your Gender</label>
+            <select id="gen" name="gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select>
+        </div>
+        <div>
+            Are you want to join our community?
+            <input type="checkbox" name="join" id="101" />
+            <label id="101">yes</label>
+
+        </div>
+        <button>Register</button>
+
+    </form>
+
+    <br>
+    <hr>
+    <form action="/action.php"> 
+         <!-- Assignment Que 2 -->
+         Qs2 . Recreate the following form using html
+        <div> 
+           <label for="name">Name : </label>
+           <input type="text" name="name" id="name"/>
+        </div> 
+        <br>
+        <div>
+            Sex :
+            <input type="radio" id="male" name="sex" value="Male"/>
+            <Label for="male">Male</Label>
+            <input type="radio" id="Female" name="sex" value="Female"/>
+            <label for="Female">Female</label>
+        </div>
+        <br>
+        <div>
+            <label for="country">Country : </label>
+            <Select name="country" id="country">
+                <option>select an option</option>
+                <option value="ind">India</option>
+                <option value="pak">Pakistan</option>
+                <option value="usa">USA</option>
+            </Select>
+        </div> 
+        <br>
+        <label for="text">Message :</label> 
+        <div>
+            <textarea id="text" rows="4">Message</textarea>
+        </div>
+        <br>
+        <div>
+            <input type="checkbox" id="101" name="subs"/>
+            <label for="101"> Subscribe?</label>
+        </div>
+        <br>
+        <button>Submit</button>
+        
+    </form>
+    <br>
+    <hr>
+    <!-- Assignment question no 3 -->
+    <form action="action.php">
+      <h2>Feedback Form</h2>
+      <br>
+      <div>
+        <label for="name">Name :</label>
+        <input type="text" placeholder="write your name" id="name" name="name"/>
+      </div>
+      <br>
+      <div>
+        <label for="email">Email : </label>
+        <input type="email" placeholder="write your email" id="email" name="email" />
+      </div>
+      <br>
+      <label for="text">Message : </label>
+      <div>
+        <textarea id="text">write the message</textarea>
+      </div>
+      <br>
+      <div>
+        Rate us our of 5 :
+      </div>
+      <div>
+        <input type="radio" id="1" name="rate">
+        <label for="1">1</label>
+      </div>
+      <div>
+        <input type="radio" id="2" name="rate">
+        <label for="2">2</label>
+      </div>
+      <div>
+        <input type="radio" id="3" name="rate">
+        <label for="3">3</label>
+      </div>
+      <div>
+        <input type="radio" id="4" name="rate">
+        <label for="4">4</label>
+      </div>
+      <div>
+        <input type="radio" id="5" name="rate">
+        <label for="5">5</label>
+      </div>
+      <br>
+      <button>Send your message!</button>
+
+    </form>
+    
+</body>
+</html>

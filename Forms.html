@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms in HTML</title>
+</head>
+<body>
+    <form action="/action.php">
+        username
+        <input type="text"/>
+        <br>
+        Password
+        <input type="password" />
+        <br>
+        Number
+        <input type="number" />
+        <br>
+        Time
+        <input type="time" />
+        <br>
+        Email
+        <input type="email" />
+        <br>
+        Date
+        <input type="date" />
+        <br>
+        Color
+        <input type="color" />
+    </form>
+     <!-- forms by using lable and placeholders -->
+    <form action="/server.php">
+        <div>
+            <label for="Username">Username</label>
+            <input type="text" placeholder="enter username" id="Username"/>
+        </div>
+        <div>
+            <label for="password">PassWord</label>
+            <input type="password" placeholder="enter password" id="password"/>
+        </div>
+        <!-- button and its types  -->
+        <button>submit</button>
+        <button type="button">hello</button>
+        <button type="reset">Reset</button>
+        <button type="submit">Submit</button>
+        <br>
+        <br>
+        <hr>
+     <!-- Checkboxes -->
+        <input type="checkbox" name="age" id="checkbox"/>
+        <label for="checkbox">I am 18+</label> 
+     <!-- radio buttons -->
+     <div>
+        select the subject:
+        <input type="radio" name="subject" id="science" value="sci"/>
+        <label for="science">Science</label>
+        <input type="radio" name="subject" id="maths" value="math"/>
+        <label for="maths">Maths</label>
+        <input type="radio" name="subject" id="biology" value="bio"/>
+        <label for="biology">Biology</label>
+     </div>
+     <!-- we also make multiple checkboxes like radio buttons -->
+     <div>
+        Select the subject:
+        <input type="checkbox" name="subject" id="science" value="sci"/>
+        <label for="science">Science</label>
+        <input type="checkbox" name="subject" id="maths" value="math"/>
+        <label for="maths">Maths</label>
+        <input type="checkbox" name="subject" id="biology" value="bio"/>
+        <label for="biology">Biology</label>
+     </div>
+     <br>
+     <br>
+     <hr>
+     <!-- dropdowns that is select attribute -->
+     <label for="sub">Select the subject :</label>
+     <select name="subjects" id="sub">
+        <option value="sci">science</option>
+        <option value="eng">english</option>
+     </select>
+     <br>
+     <br>
+     <hr>
+     <!-- Range attribute -->
+     <label for="volume">Volume</label>
+     <input type="range" min="0" max="1000" id="volume" name="vol"/>
+     <br>
+     <br>
+     <hr>
+     <!-- text Area -->
+     <label for="text">feedback</label>
+     <textarea id="text" value="feed" rows="2" cols="1"></textarea>
+     <button>submit</button>
+    </form>
+     
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Use of name Attribute</title>
+</head>
+<body>
+    <!-- name attribute is use to pass name value pair through source link to database -->
+    <form action="/action.php">
+        <label for="username">Enter Username</label>
+        <input type="text" placeholder="enter the username" id="username" name="user"/>
+        <br>
+        <label for="password">Enter Password</label>
+        <input type="password" placeholder="enter password" id="password" name="pass"/>
+        <br>
+        <button>submit</button>
+        <br>
+        <br>
+        <hr>
+    </form>
+    <!-- by using name attribute we can access youtube,google and many website on our search bar -->
+    <form action="https://www.youtube.com/results?">
+      <input type="text" placeholder="search on youtube" name="search_query"/>
+      <button>search</button>
+    </form>
+    <br>
+    <br>
+    <hr>
+    <form action="https://www.google.com/search?">
+        <input type="text" placeholder="search on google" name="q" />
+        <button>search</button>
+    </form>
+
+</body>
+</html>
